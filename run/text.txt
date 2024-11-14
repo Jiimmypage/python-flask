@@ -1,0 +1,19 @@
+request = requisição
+
+404 = quando não encontra
+
+400 =  indica que o servidor não pode ou não irá processar
+a requisição devido a alguma coisa que foi entendida como
+um erro do cliente 
+
+unique = unico nome no banco de dados
+
+login_required = precisa que o usuario esteja logado para modificar os dados.
+
+db.foreingKey = chave estrangeira
+
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
+from sqlalchemy.orm import Session
+
